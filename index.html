@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador De usuarios</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="root">
+        <div class="calendar" id="calendar">
+        </div>
+
+        <div class="users" id="users">
+          
+        </div>
+
+      </div>
+
+
+
+      </div>
+
+        <!-- Datos del Eje X, que se Muestra en la grafica -->
+        <ul class="chart-values">
+          <li>Lun</li>
+          <li>Mar</li>
+          <li>Mie</li>
+          <li>Jue</li>
+          <li>Vie</li>
+          <li>Sab</li>
+          <li>Dom</li>
+        </ul>
+
+        <!-- Tareas que se Muestran en la Grafica -->
+        <ul class="chart-bars">
+          <li data-duration="tue½-wed" data-color="#b03532">Task</li>
+          <li data-duration="wed-sat" data-color="#33a8a5">Task</li>
+          <li data-duration="sun-tue" data-color="#30997a">Task</li>
+          <li data-duration="tue½-thu" data-color="#6a478f">Task</li>
+          <li data-duration="mon-tue½" data-color="#da6f2b">Task</li>
+          <li data-duration="wed-wed" data-color="#3d8bb1">Task</li>
+          <li data-duration="thu-fri½" data-color="#e03f3f">Task</li>
+          <li data-duration="mon½-wed½" data-color="#59a627">Task</li>
+          <li data-duration="fri-sat" data-color="#4464a1">Task</li>
+        </ul>
+      </div>
+
+      <footer class="page-footer">
+
+      </footer>
+    </main>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"
+    integrity="sha512-Qy4cmZ6v7vnVEc0cn/BIj9q15eB98do4hMvu8xtc/H+v+YYpdpDrB35flHS3NPLbZUpe1npSYY/u+Gi3UB61vw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+
+  <script type="text/javascript">
+    let app = new App("calendar", "users");
+  </script>
+
+  </body>
+</html>
